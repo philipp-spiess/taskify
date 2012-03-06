@@ -1,0 +1,31 @@
+<h1>Listing connected_accounts</h1>
+
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Link</th>
+    <th>Email</th>
+    <th>Name</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @connected_accounts.each do |connected_account| %>
+  <tr>
+    <td><%= connected_account.key %></td>
+    <td><%= connected_account.link %></td>
+    <td><%= connected_account.email %></td>
+    <td><%= connected_account.name %></td>
+    <td><%= connected_account.user %></td>
+    <td><%= link_to 'Show', connected_account %></td>
+    <td><%= link_to 'Edit', edit_connected_account_path(connected_account) %></td>
+    <td><%= link_to 'Destroy', connected_account, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Connected account', new_connected_account_path %>

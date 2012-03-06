@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Key:</b>
+  <%= @connected_account.key %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%= @connected_account.link %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @connected_account.email %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @connected_account.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @connected_account.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_connected_account_path(@connected_account) %> |
+<%= link_to 'Back', connected_accounts_path %>

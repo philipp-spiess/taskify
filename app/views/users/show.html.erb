@@ -1,0 +1,31 @@
+<div class="user">
+  <img class="avatar" src="http://www.gravatar.com/avatar/<%= @email_md5 %>?s=140&d=mm" width="140" height="140">
+  <ul>
+    <li><b>Nickname:</b> <%= @user.nickname %></li>
+
+    <li><b>Name:</b> <%= @user.name %></li>
+
+    <li><b>Email:</b> <%= @user.email %></li>
+
+    <li><b>Member Since:</b> <%= localize(@user.created_at.to_date, :format => :short) %></li>
+
+    <% if !@user.location.empty? %>
+      <li><b>Location:</b> <%= @user.location %></li>
+    <% end %>
+
+    <% if !@user.website.empty? %>
+      <li><b>Website:</b> <%= @user.website %></li>
+    <% end %>
+
+    <% if !@user.company.empty? %>
+      <li><b>Company:</b> <%= @user.company %></li>
+    <% end %>
+
+    <% if !@user.about.empty? %>
+      <li><b>About:</b> <%= @user.about %></li>
+    <% end %>
+  </ul>
+</div>
+
+
+<style><%= @user.css %></style>

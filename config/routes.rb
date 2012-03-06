@@ -1,4 +1,15 @@
 Taskify::Application.routes.draw do
+
+  root :to => "home#index"
+
+  #resources :tasks
+
+  #resources :connected_accounts
+
+  #resources :users
+
+  match ':nickname' => 'users#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -2,13 +2,34 @@
 <html>
 <head>
   <title>Taskify</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link href="/css/application.css" media="screen" rel="stylesheet" type="text/css" />
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="navbar navbar-fixed-top">
+  	<div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/">Taskify</a>
+        <div class="nav-collapse pull-right">
+          <ul class="nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#about">Signup</a></li>
+            <li><a href="#contact">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<%= yield %>
+  <div id="main" role="main" class="container">
+		<%= yield %>
+  </div>
 
 </body>
 </html>

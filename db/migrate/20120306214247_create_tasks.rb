@@ -6,7 +6,7 @@ class CreateTasks < ActiveRecord::Migration
       t.string :image
       t.string :website
       t.date :date
-      t.reference :user
+      t.references :user
 
       t.timestamps
     end

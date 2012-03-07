@@ -2,11 +2,11 @@ Taskify::Application.routes.draw do
 
   root :to => "home#index"
 
-  #resources :tasks
+  resources :tasks
 
-  #resources :connected_accounts
+  resources :connected_accounts
 
-  #resources :users
+  resources :users
 
   match ':nickname' => 'users#show'
 

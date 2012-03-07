@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Taskify</title>
-  <link href="/css/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/css/application.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -15,12 +16,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="/">Taskify</a>
+        <a class="brand" href="/">
+          <img src="/img/logo_small.png">
+          <span>
+            Taskify
+          </span>
+        </a>
         <div class="nav-collapse pull-right">
           <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#about">Signup</a></li>
-            <li><a href="#contact">Login</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">Login</a></li>
           </ul>
         </div>
       </div>

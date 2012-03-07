@@ -1,37 +1,4 @@
-// Path
-@img : "/img/";
-
-// We <3 Twitter's Bootstrap!
 @import "../less/bootstrap.less";
-
-
-
-body {
-	padding-top: 90px;
-	background: #2B2B2B;
-	color: #cecece;
-	text-shadow: 0 1px 1px rgba(0,0,0,.75);
-}
-
-.navbar-inner {
-	height:60px;
-	background: #242424;
-	.box-shadow(0 10px 15px rgba(0,0,0,.3));
-	color:#4a4a4a;
-	border-bottom:1px solid #2d2d2d;
-
-	.container {
-		padding-top:10px;
-	}
-}
-
-img.avatar {
-	.border-radius(5px);
-	.box-shadow(0 1px 1px rgba(0,0,0,.75));
-}
-
-
-
-.user {
-	.pull-right;
-}
+@import "app/main.less";
+@import "app/home.less";
+@import "app/user.less";

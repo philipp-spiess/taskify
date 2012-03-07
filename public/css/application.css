@@ -3682,30 +3682,88 @@ a.thumbnail:hover {
 }
 body {
   padding-top: 90px;
-  background: #2B2B2B;
+  background: #2b2b2b url(/img/bg.gif);
   color: #cecece;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Varela Round", "helvetica neue", arial, helvetica, sans-serif;
+  color: #cecece;
 }
 .navbar-inner {
   height: 60px;
   background: #242424;
-  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.17);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.17);
   color: #4a4a4a;
   border-bottom: 1px solid #2d2d2d;
 }
 .navbar-inner .container {
-  padding-top: 10px;
+  padding-top: 11px;
 }
-img.avatar {
+.navbar-inner .container .brand {
+  padding-top: 0;
+  margin-top: -3px;
+}
+.navbar-inner .container .brand img {
+  float: left;
+}
+.navbar-inner .container .brand span {
+  float: left;
+  margin-left: 10px;
+  margin-top: 12px;
+  font-size: 24px;
+  color: #f7f7f7;
+}
+.home .teaser {
+  margin-top: 20px;
+}
+.home .teaser h1 {
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: normal;
+}
+.home .teaser p {
+  margin: 20px 0;
+  font-size: 32px;
+  line-height: 42px;
+  color: #919191;
+}
+.home img {
+  margin-top: 10px;
+  float: right;
+}
+.home .btn-signup {
+  margin: 15px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 35px 0 35px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 0 white;
+  font-size: 29px;
+  color: #2B2B2B;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+}
+.user .box {
+  float: right;
+}
+.user .box img.avatar {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
-}
-.user {
-  float: right;
 }

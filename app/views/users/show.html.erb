@@ -17,15 +17,15 @@
       <li><b>Website:</b> <%= @user.website %></li>
     <% end %>
 
-    <% if !@user.company.empty? %>
+    <% if @user.company %>
       <li><b>Company:</b> <%= @user.company %></li>
     <% end %>
 
-    <% if !@user.about.empty? %>
+    <% if @user.about %>
       <li><b>About:</b> <%= @user.about %></li>
     <% end %>
   </ul>
 </div>
 
-
+<!-- Attach user's custom stylesheet -->
 <style><%= @user.css %></style>

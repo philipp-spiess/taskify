@@ -3723,6 +3723,9 @@ h6 {
   font-size: 24px;
   color: #f7f7f7;
 }
+.navbar-inner .container .nav .active a {
+  background: transparent;
+}
 .home .teaser {
   margin-top: 20px;
 }
@@ -3738,7 +3741,7 @@ h6 {
   color: #919191;
 }
 .home img {
-  margin-top: 10px;
+  margin-top: 30px;
   float: right;
 }
 .home .btn-signup {
